@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="title"> Home </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="conteudo animate__animated animate__fadeInLeft">
+    <img
+      class="img-item"
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-qS8z_03OdrI3n8fUdynIoXjw1vjkfPyvtQ&usqp=CAU"
+      alt="essa é uma imagem de solidariedade"
+    />
+    <p>Existem pessoas precisando da sua ajuda, veja abaixo como ajudar 😁</p>
+
+    <ion-card [routerLink]='["/tabs/tab2"]'>
+      <ion-item>
+        <ion-thumbnail>
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/4994/4994354.png"
+            class="icon-card"
+          />
+        </ion-thumbnail>
+        <ion-label> Quero Doar</ion-label>
+      </ion-item>
+    </ion-card>
+
+    <ion-card [routerLink]="['/tabs/tab3']" > 
+      <ion-item>
+        <ion-thumbnail>
+          <img
+            src="https://openclipart.org/image/800px/276483"
+            class="icon-card"
+          />
+        </ion-thumbnail>
+        <ion-label> Preciso de Doações</ion-label>
+      </ion-item>
+    </ion-card>
+  </div>
+</ion-content>
